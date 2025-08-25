@@ -347,7 +347,7 @@ Function Invoke-IntuneManagedWindowsDevicesDiscoveredApps
 
         Foreach($ForEach_WinDevice in $($All_Windows_Intune_Managed_Deviecs_Data))
             {
-                Write-Host "[$($Counter_ForEachWinDeviceRunState)]: Collecting Discovered Apps Info for Device Name: $($ForEach_WinDevice.DeviceName) || Intune ID: $($ForEach_WinDevice.Id.ToUpper()). " -ForegroundColor Magenta
+                Write-Host "[$($Counter_ForEachWinDeviceRunState)]: Collecting Discovered Apps Info for Device Name: $($ForEach_WinDevice.DeviceName) || Intune ID: $($ForEach_WinDevice.Id.ToUpper()). " -ForegroundColor Yellow
                 $Json_Payload = @{
                                     ReportName        = "AppInvByDevice"
                                     Filter            = "(DeviceId eq '$($ForEach_WinDevice.Id)')"
@@ -402,4 +402,5 @@ Else
         Exit
 
     }
+
 
