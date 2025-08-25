@@ -23,7 +23,7 @@
 
 
             Version Control:
-            19-May-2025 :: v1.0
+            24-Aug-2025 :: v1.0
 #>
 Function Install-MgGraph-WithUsageTracking 
     {
@@ -400,4 +400,5 @@ Else
         Write-Host "Failed to authenticate with Microsoft Graph API. Rerun this powershell code with valid credentials." -F Red
         Start-Sleep 5
         Exit
+
     }
