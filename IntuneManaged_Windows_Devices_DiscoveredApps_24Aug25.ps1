@@ -373,7 +373,7 @@ Function Invoke-IntuneManagedWindowsDevicesDiscoveredApps
                                 }
                     }
                 
-                $Counter_DeviceRunStatesByProactiveRemediation ++
+                $Counter_ForEachWinDeviceRunState ++
             }
         Invoke-CombineCsvReports -ZipFolder $ZipFolder -DesignatedFileName "Intune_Managed_Windows_Device_Discovered_Apps_Report"
     }
@@ -402,3 +402,4 @@ Else
         Exit
 
     }
+
